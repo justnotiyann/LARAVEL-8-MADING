@@ -28,11 +28,10 @@ class DashboardController extends Controller
 
     public function dashboard()
     {
-        dd(Auth::user()->username);
         $result = Berita::orderBy('created_at', 'desc')->get();
+        // return view('admin');
         return view('admin', [
             'result' => $result
-
         ]);
     }
 
