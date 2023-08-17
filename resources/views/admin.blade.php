@@ -15,6 +15,7 @@
                 </button>
             </div>
         @endif
+
         <div class="row">
             {{-- sisi kiri --}}
             <div class="col-6">
@@ -78,6 +79,7 @@
                         @enderror
 
                     </div>
+
 
                     <div class="form-group">
                         <label for="author">Nama Author</label>

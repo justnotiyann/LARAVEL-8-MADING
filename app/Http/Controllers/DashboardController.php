@@ -8,10 +8,16 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
+
     public function index()
     {
-        return view('home');
+        // Tampilkan semua data berita
+        $beritas = Berita::get();
 
+        //variabel tidak sama dengan model
+        return view('home', [
+            'beritas' => $beritas
+        ]);
     }
 
     public function login()

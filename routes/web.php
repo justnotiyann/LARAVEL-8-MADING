@@ -7,8 +7,27 @@ use App\Http\Controllers\TestingController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
+
+// MVC = Model View Controller
+
+// Variabel = tempat menyimpan data
+// Model = Mengatur Query Database
+// View = Tampilan
+// Controller = Mengatur logic
+
+
+// CRUD = CREATE READ UPDATE DELETE
+// CREATE = HTTP METHOD = POST = MEMBUAT DATA
+// READ = HTTP METHOD = GET = MEMBACA/ MENGAMBIL
+// UPDATE = HTTP METHOD = PUT = MEMPERBARUI
+// DELETE = HTTP METHOD = DELETE = HAPUS
+
 // PROSES ROUTING / RUTE
+
 Route::get('/', [DashboardController::class, 'index']);
+
+
 
 Route::get('/login', [DashboardController::class, 'login']);
 Route::get('/register', [DashboardController::class, 'register']);

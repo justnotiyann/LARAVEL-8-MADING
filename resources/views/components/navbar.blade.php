@@ -1,6 +1,6 @@
 {{-- navbar --}}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
         <ul class="navbar-nav">
 
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
 
             {{-- Halaman registrasi user --}}
@@ -21,6 +21,11 @@
             {{-- Halaman login user --}}
             <li class="nav-item active">
                 <a class="nav-link" href="/login">Login</a>
+            </li>
+
+            {{-- Halaman login user --}}
+            <li class="nav-item active">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
             </li>
 
         </ul>
